@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Contact - Benjamin Windsor Design</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <meta name="description" content="Benjamin Windsor - Front end web dev and freelance digital designer based in London, UK.">
+    <meta name="keywords" content="Front End Web Dev, London, Ben, Windsor, HTML, CSS, XML, XHTML, JavaScript, Digital Design">
+ 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+ 
+  </head>
+  <body>
+    
+    <nav class="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+      <div id="nav-icon3" class="pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" role="navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+
+      
+      <a class="navbar-brand" href="index">bw</a>
+  
+    </div>
+ 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse no-transition" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+       
+        <li><a href="index#two">Projects</a></li>
+        <li><a href="about-me">About me</a></li>
+        <li><a href="contact">Contact</a></li>
+
+   
+       
+      </ul>
+
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ 
+    <!--JUMBOTRON-->
+ 
+
+   
+     <div class="container others">
+     
+
+      <div class="contact col-sm-12 col-md-4">
+
+
+
+      <h2>contact</h2>
+
+
+      <p>If you would like to find out more about me or some of the work that I have undertaken, please do not hesitate to get in touch.</p>
+
+      <br>
+
+      <p>+44 (0) 7908 487166</p>
+
+      <br>
+
+      <a href="mailto:benjaminawindsor@gmail.com" target="_blank">benjaminawindsor@gmail.com</a>
+
+      <br><br>
+      
+      <a href="http://github.com/benjaminwindsor" target="_blank">github</a>
+
+
+      </div>
+
+  
+     </div> <!--container div-->
+
+
+  <div class="copyright-contact">
+
+              <div class="linkedin pull-right">
+        <a href="https://www.linkedin.com/in/benwindsordesign/" target="_blank">
+            <img class="main" src="images/linkedin-black.png" alt="Linkedin thumbnail link"/>
+            <img class="overlay" src="images/linkedin-color.png" alt="Linkedin thumbnail link" />
+        </a>
+    </div>
+
+    <div class="github pull-right">
+      <a href="https://github.com/benjaminwindsor" target="_blank">
+          <img class="main" src="images/github-black.png" alt="Github thumbnail link"/>
+      </a>
+  </div>
+
+       <p><a href="#top">&copy; Benjamin Windsor</a></p>
+
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <script>
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+
+</script>
+
+<script src="js/index.js"></script>
+
+  </body>
+</html>
+ 
