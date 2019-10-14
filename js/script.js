@@ -97,7 +97,7 @@ $(document).ready(function(){
 
 //ANIMATE ON SCROLL EFFECT
 
-    AOS.init({
+      AOS.init({
       duration : 1200,
     });
 
