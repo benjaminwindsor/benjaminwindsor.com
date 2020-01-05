@@ -30,7 +30,7 @@ ul.bxslider {
 /** THEME
 ===================================*/
 .bx-wrapper {
-  border: 5px solid #fff;
+  border: 5px solid rgba(255, 255, 255, 0);
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
@@ -58,7 +58,7 @@ ul.bxslider {
   padding-top: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  background: #fff;
   text-indent: -9999px;
   display: block;
   width: 10px;
