@@ -12,12 +12,8 @@ html {
 }
 
 body {
-   background: linear-gradient(-60deg, rgb(255, 253, 253), rgb(96, 244, 255), rgb(255, 1, 1),#ffed00 );
-   background-size: 400% 100%;
-   -webkit-animation: Gradient 15s ease infinite;
-   -moz-animation: Gradient 15s ease infinite;
-   animation: Gradient 12s ease infinite;
-   animation: change 10s ease-in-out infinite;
+   
+   background: black;
    color: #fff;
 }
 
@@ -127,8 +123,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
     line-height: 30px;
     min-height: 30px;
     padding: 7px;
-    padding-bottom: 0px;
-    position: fixed;
+    position: relative;
     bottom:0;
     width:100%;
     height:60px;   /* Height of the footer */
@@ -191,6 +186,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 
 }
 
+
 .marquee-index p{
    
    height: 32px;
@@ -198,12 +194,84 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    color: #000;
 }
 
+.column {
+   max-width: 100%;
+   flex: 50%;
+   padding: 5px;
+}
+
+.column2 {
+
+   max-width: 100%;
+   float: right;
+   flex: 50%;
+   padding: 5px;
+}
+
+.column3 {
+
+   max-width: 100%;
+   flex: 100%;
+   padding: 5px;
+}
+
+/**/
+
+article h3 {
+
+   position: absolute;
+    z-index: 300;
+    font-weight: normal;
+    cursor: none;
+    white-space: nowrap;
+
+}
+
+#hoverdiv {
+   display: none;
+   position: absolute;
+   color: #fff;
+   background-color: transparent;
+}
+
+
+#movableText {
+   display: none;
+   position: absolute;
+   color: #fff;
+   background-color: transparent;
+}
+
+
+.hover {
+
+   text-align: center;
+   font-size: 20px;
+   font-weight: 100;
+   display: inline-block;
+   background-position: 50% 50%;
+}
+
+.work-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    padding:2px;
+    height:360px;
+    width: 100%;
+}
+
+.wrapper {
+   display: flex;
+   height: 100%;
+   width: 100%;
+ }
+
 .navbar-home {
    margin-bottom: 0;
    display: inline-block;
    list-style-type: none;
    position: relative;
-
 }
 
 
@@ -211,7 +279,6 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    margin-bottom: 0;
    color: #fff;
    padding: 20px;
-
 }
 
 .navbar {
@@ -219,16 +286,13 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    display: inline-block;
    list-style-type: none;
    position: static;
-
 }
-
 
 .navbar a{
    margin-bottom: 0;
    color: #fff;
-
+   cursor: pointer;
 }
-
 
 .navbar-nav {
 
@@ -244,17 +308,26 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    font-style:normal;
    font-size: 125px;
    line-height: 85px;
-   width: 200px;
-   height: 100px;
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s;
-
+   width: 250px;
+   height: 250px;
+   -webkit-animation-name: rotate; 
+   -webkit-animation-duration: 8s; 
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: linear;
+   -moz-animation-name: rotate; 
+   -moz-animation-duration: 8s; 
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: linear;
+   animation-name: rotate; 
+   animation-duration: 8s; 
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
+
 .navbar-brand:hover {
   
    width: 250px;
    color: #fff;
-
 }
 
 .no-transition {
@@ -266,6 +339,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
  }
 
 .overlay {
+  
   height: 100%;
   width: 100%;
   display: none;
@@ -273,8 +347,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgb(96, 244, 255);
+  background-color: #111;
 }
 
 .overlay-content {
@@ -297,7 +370,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: rgb(0, 0, 0);
+  color: #fff
 }
 
 .overlay .closebtn {
@@ -306,8 +379,6 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
   right: 45px;
   font-size: 30px;
 }
-
-
 
 .banner {
 
@@ -319,13 +390,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    position: fixed;
    width: 100%;
    color: #fff;
-   background: linear-gradient(-60deg, rgb(255, 253, 253), rgb(96, 244, 255), rgb(255, 1, 1),#ffed00 );
-   background-size: 400% 100%;
-   -webkit-animation: Gradient 15s ease infinite;
-   -moz-animation: Gradient 15s ease infinite;
-   animation: Gradient 12s ease infinite;
-   animation: change 10s ease-in-out infinite;
-
+   background: black;
 }
 
 .banner-2 {
@@ -338,29 +403,27 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    font-size: 21px;
    width: 100%;
    color: #fff;
-   background: linear-gradient(-60deg, rgb(255, 253, 253), rgb(96, 244, 255), rgb(255, 1, 1),#ffed00 );
-   background-size: 400% 100%;
-   -webkit-animation: Gradient 15s ease infinite;
-   -moz-animation: Gradient 15s ease infinite;
-   animation: Gradient 12s ease infinite;
-   animation: change 10s ease-in-out infinite;
-
+   background: black;
 }
 
 #bs-example-navbar-collapse-1 {
 
-  z-index: 2;
-  background-color: transparent;
-  padding-top: 30px;
-
+   z-index: 2;
+   background-color: transparent;
+   padding-top: 30px;
 }
 
 #bs-example-navbar-collapse-2 {
 
+   padding-top: 30px;
    z-index: 2;
    background-color: transparent;
-
+   height: 340vh;
+   transition: height 2.66s ease-out, width 2.66s ease-out;
 }
+
+/*bs-example-navbar-collapse-2 to be used on longer pages (motion, digital design)*/
+
 
 .form-group {
 
@@ -375,7 +438,6 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 }
 
 .navbar-toggle {
-
     background-color: #fff;
     margin-top: 86px;
     margin-right: 75px;
@@ -385,15 +447,12 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 }
 
 .navbar-toggle span {
-
-
     background-color: #000;
     width: 2px;
     height: 22px;
 }
 
 .navbar-toggle .icon-bar {
-
     height: 4px;
 }
 
@@ -403,13 +462,11 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    right: 15px;
    overflow-y: visible;
    width: 100%;
-   height: 102%;
+   height: 100vh;
    background-color: #ffed00;
    overflow: hidden;
    transition: height 0.66s ease-out, width 0.66s ease-out;
-
 }
-
 
 /* Icon 1 */
 
@@ -560,12 +617,36 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 
 .aboutmetext {
 
+   padding-top: 12%;
+   overflow: auto;
+   position: relative;
+
+}
+
+.aboutmetext p {
+
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-family: 'hk_novamedium_narrow', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   font-style:normal;
+   text-decoration-color: #fff;
+   color: #fff;
+   margin: 38px;
+   text-align: center;
+   justify-content: center;
+}
+
+
+.switchtext {
+
    padding-top: 10%;
    overflow: auto;
 
 }
 
-.aboutmetext p {
+.switchtext p {
 
    background-size: cover;
    background-repeat: no-repeat;
@@ -582,15 +663,29 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 
 .aboutmetext h2 {
 
-   font-family: 'clearline', sans-serif;
-   font-size: 6rem;
+   font-family: 'hk_novamedium_narrow', sans-serif;
+   font-size: 4rem;
 
 }
 
 .aboutmetext a {
-  
-   color: #ffed00;
 
+   color: #fff;
+   border-bottom: 2px solid;
+   cursor: pointer;
+}
+
+.aboutmetext a:hover {
+
+   color: #fff;
+   text-decoration: none;
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+   background-position: bottom;
+   background-repeat: repeat-x;
+   background-size: auto 6px;
+   border-bottom: 0 #fff;
+   padding-bottom: 2px;
+   text-decoration: none;
 }
 
 }
@@ -601,6 +696,10 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 
 .bx-wrapper .bx-pager.bx-default-pager a.active {
    background: #fff;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+   background: #;
 }
 
 .jumbotron p {
@@ -621,12 +720,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    text-decoration-color: #fff;
    color: #000;
    list-style-type: none;
-   background: linear-gradient(-60deg, rgb(255, 253, 253), rgb(96, 244, 255), rgb(255, 1, 1),#ffed00 );
-   background-size: 400% 100%;
-   -webkit-animation: Gradient 15s ease infinite;
-   -moz-animation: Gradient 15s ease infinite;
-   animation: Gradient 12s ease infinite;
-   animation: change 10s ease-in-out infinite;
+   background: black;
       }
       
       @keyframes change {
@@ -683,7 +777,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    background-repeat: no-repeat;
    font-family: 'hk_novamedium_narrow', sans-serif;
    font-weight: 400;
-   font-size: 21px;
+   font-size: 20px;
    font-style:normal;
    text-decoration-color: #fff;
    padding-top: 10%;
@@ -693,13 +787,23 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 
    color: #fff;
    border-bottom: 2px solid;
+   cursor: pointer;
 }
 
 .contact a:hover {
 
-   color: #ffed00;
+   color: #fff;
+   text-decoration: none;
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+   background-position: bottom;
+   background-repeat: repeat-x;
+   background-size: auto 6px;
+   border-bottom: 0 #fff;
+   padding-bottom: 2px;
    text-decoration: none;
 }
+
+
 
 .contact h2 {
 
@@ -742,12 +846,6 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
     margin-left:20px;
 }
 
-.navbar-collapse.collapse {
-    
-   #bs-example-navbar-collapse-1
-
-    }
-
 .intro {
 
    position: absolute;
@@ -755,13 +853,13 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
    font-family: 'hk_novamedium_narrow', sans-serif;
    display: inline-block;
    list-style-type: none;
-    text-align:center;
-    width: 100%;
+   text-align:center;
+   width: 100%;
 
 }
 .button {
 
-   background: #ffed00;
+   background: #111;
    width: 450px;
    height: 32px;
    transform: translateY(-50%); 
@@ -779,7 +877,12 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 a {
 
    color: #fff;
+   cursor: pointer;
 
+}
+
+a:hover, a:focus {
+   color: #fff;
 }
 
 h1, h2 {
@@ -792,8 +895,8 @@ h1, h2 {
 
    padding:2px;
    height:360px;
-   width: 100%;
 }
+
 
 .box img{
 
@@ -806,7 +909,7 @@ h1, h2 {
    position: relative;
    font-family: 'hk_novamedium_narrow', sans-serif;
    padding-top: 120px;
-   padding-left: 20px;
+   padding-left: 80px;
 }
 
 .tablet-text2 {
@@ -884,27 +987,11 @@ h1, h2 {
 
    position: relative;
    padding: 5px;
-   -webkit-transition-property: -webkit-transform;
-   -webkit-transition-duration: 1s;
-   -moz-transition-property: -moz-transform;
-   -moz-transition-duration: 1s;
-   transition-property: transform;
-   transition-duration: 1s;
+
 }
 
 .github:hover {
-   -webkit-animation-name: rotate; 
-   -webkit-animation-duration: 2s; 
-   -webkit-animation-iteration-count: infinite;
-   -webkit-animation-timing-function: linear;
-   -moz-animation-name: rotate; 
-   -moz-animation-duration: 2s; 
-   -moz-animation-iteration-count: infinite;
-   -moz-animation-timing-function: linear;
-   animation-name: rotate; 
-   animation-duration: 2s; 
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
+
 }
 
 @-webkit-keyframes rotate {
@@ -931,27 +1018,11 @@ h1, h2 {
 
    position: relative;
    padding: 5px;
-   -webkit-transition-property: -webkit-transform;
-   -webkit-transition-duration: 1s;
-   -moz-transition-property: -moz-transform;
-   -moz-transition-duration: 1s;
-   transition-property: transform;
-   transition-duration: 1s;
+
 }
 
 .linkedin:hover {
-   -webkit-animation-name: rotate; 
-   -webkit-animation-duration: 2s; 
-   -webkit-animation-iteration-count: infinite;
-   -webkit-animation-timing-function: linear;
-   -moz-animation-name: rotate; 
-   -moz-animation-duration: 2s; 
-   -moz-animation-iteration-count: infinite;
-   -moz-animation-timing-function: linear;
-   animation-name: rotate; 
-   animation-duration: 2s; 
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
+
 }
 
 .linkedin img {
@@ -1025,9 +1096,6 @@ color: #fff;
 
 }
 
-.container {
-   min-block-size: 100vh;
-}
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -1043,21 +1111,38 @@ color: #fff;
 #bs-example-navbar-collapse-1 {
 
   z-index: 2;
-  background-color: #72e7f1;
+  background-color: #111;
 
 }
 
+#bs-example-navbar-collapse-2 {
+
+   z-index: 2;
+   background-color: #111;
+ 
+ }
+
 .navbar-brand {
 
+   font-family: 'clearline', sans-serif;
    font-weight:normal;
    font-style:normal;
-   font-size: 85px;
-   line-height: 50px;
-   color: #000;
-   width: 120px;
-   height: 70px;
-   -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-   transition: width 2s;
+   font-size: 125px;
+   line-height: 85px;
+   width: 150px;
+   height: 150px;
+   -webkit-animation-name: rotate; 
+   -webkit-animation-duration: 8s; 
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: linear;
+   -moz-animation-name: rotate; 
+   -moz-animation-duration: 8s; 
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: linear;
+   animation-name: rotate; 
+   animation-duration: 8s; 
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 
 }
 
@@ -1078,7 +1163,7 @@ color: #fff;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-   background-color: #ffed00;
+   background-color: #111;
    color: #fff;
 }
 
@@ -1108,7 +1193,7 @@ color: #fff;
 
 .button {
 
-   background: #ffed00;
+   background: #111;
    width: 300px;
    height: 27px;
    transform: translateY(-50%); 
@@ -1131,6 +1216,15 @@ color: #fff;
    color: #fff;
    font-size: 14px;
 }
+
+.switchtext p {
+
+   font-family: 'hk_novamedium_narrow', sans-serif;
+   font-style:normal;
+   color: #fff;
+   font-size: 14px;
+}
+
 .aboutmetext h2 {
 
    padding-top: 10px;
@@ -1156,6 +1250,22 @@ color: #fff;
 
 }
 
+.column {
+   max-width: 100%;
+   flex: 100%;
+}
+
+.column2 {
+
+   max-width: 100%;
+   float: right;
+   flex: 100%;
+   padding: 5px;
+}
+.wrapper {
+   flex-direction: column-reverse;
+}
+
 .referee-hub img{
 
    margin-top: 20px;
@@ -1176,13 +1286,6 @@ color: #fff;
    z-index: -1;
 }
 
-.copyright-switch {
-
-    position:relative;
-    /*z-index: 3;
-    background-color: #ffed00;*/ /*Potential update*/
-
-}
 
 .copyright {
     color: #222;
@@ -1201,10 +1304,34 @@ color: #fff;
 
 }
 
+
+.banner {
+   font-size: 18px;
+}
+
+.banner-2 {
+   font-size: 18px;
+}
+
+
+
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) { 
 
+#bs-example-navbar-collapse-1 {
+
+      z-index: 2;
+      background-color: #111;    
+    }
+
+#bs-example-navbar-collapse-2 {
+
+      z-index: 2;
+      background-color: #111;    
+    }
+    
 .aboutmetext {
 
     padding-top: 90px;
@@ -1219,22 +1346,41 @@ color: #fff;
    font-size: 17px;
 }
 
+.switchtext p {
+
+   font-family: 'hk_novamedium_narrow', sans-serif;
+   font-style:normal;
+   color: #fff;
+   font-size: 17px;
+}
+
 .navbar-brand {
 
+   font-family: 'clearline', sans-serif;
    font-weight:normal;
    font-style:normal;
-   font-size: 110px;
-   line-height: 65px;
-   width: 150px;
-   height: 80px;
-   -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-   transition: width 2s;
+   font-size: 125px;
+   line-height: 85px;
+   width: 175px;
+   height: 175px;
+   -webkit-animation-name: rotate; 
+   -webkit-animation-duration: 8s; 
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: linear;
+   -moz-animation-name: rotate; 
+   -moz-animation-duration: 8s; 
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: linear;
+   animation-name: rotate; 
+   animation-duration: 8s; 
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 
 }
 
 .navbar-brand:hover {
 
-   width: 200px;
+   width: 175px;
    color: #fff;
 }
 
@@ -1243,6 +1389,15 @@ color: #fff;
   color: #fff;
 }
 
+.nav > li {
+   position: relative;
+   display: block;
+   font-size: 26px;
+   padding: 20px;
+   top: 50px;
+   text-align: center;
+   margin: 0 auto;
+}
 
 .intro h1 {
 
@@ -1263,11 +1418,6 @@ color: #fff;
    padding: 0;
 }
 
-.copyright-switch {
-
-    position: relative;
-
-}
 
 .copyright {
     color: #222;
@@ -1304,7 +1454,7 @@ color: #fff;
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #000;
+  background: #fff;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -1315,6 +1465,14 @@ color: #fff;
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+}
+
+.banner {
+   font-size: 19px;
+}
+
+.banner-2 {
+   font-size: 19px;
 }
 
 }
@@ -1368,7 +1526,7 @@ color: #fff;
 
 .copyright-switch {
 
-    position: absolute;
+    position: relative;
 
 }
 
@@ -1385,6 +1543,32 @@ color: #fff;
 
 }
 
+@media (min-height: 330px) and (max-height: 725px) { 
+
+.copyright-contact {
+   position: relative;
+   margin-top: 85px;
+}
+
+.copyright-switch {
+   position: relative;
+   margin-top: 85px;
+}
+
+}
+
+@media (min-height: 200px) and (max-height: 825px) { 
+
+	.banner {
+      font-size: 18px;
+   }
+   
+   .banner-2 {
+      font-size: 18px;
+   }
+
+}
+
 @media (min-height: 1200px) {
 
    .copyright-others {
@@ -1396,6 +1580,12 @@ color: #fff;
 
         position: relative;
         top: 45%;
+        min-block-size: 0vh;
+        
+   }
+
+   .container {
+        min-block-size: 0vh;
    }
 
 }
