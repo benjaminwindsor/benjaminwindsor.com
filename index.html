@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,18 +21,19 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>          
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>   
+    <!--ROLLOVER MOUSE TEXT EFFECT--> 
+    <script type="text/javascript" src="js/hover.js"></script>
+
   </head>
 
-
-  
   <body>
 
 <div class="banner">
 
 <marquee SCROLLDELAY=60 DIRECTION=RIGHT>
 
-    <span>GRAPHICS</span>
+    <span>MULTIDISCIPLINARY</span>
     <span>></span>
     <span>FRONT END</span>
     <span>></span>
@@ -45,6 +47,7 @@
     <span>></span>
     <span>DIGITAL DESIGN</span>
     <span>></span>
+
 </marquee>
 
 </div>
@@ -53,7 +56,7 @@
    
       <div class="intro col-xs-12 visible-xs visible-sm hidden-md hidden-lg">
 
-          <h1>I AM BENJAMIN <span style="font-size:40px; margin-top:-320px;cursor:pointer" onmousedown="openNav()">&ShortDownArrow;</span></h1>
+          <h1>BENJAMIN WINDSOR <span style="margin-top:-320px;cursor:pointer" onmousedown="openNav()">&ShortDownArrow;</span></h1>
 
       </div>
 
@@ -61,7 +64,7 @@
 
         <div class="intro hidden-sm visible-md visible-lg">
 
-             <h1>I AM BENJAMIN</h1>
+             <h1>BENJAMIN WINDSOR</h1>
 
     <div class="navbar-home collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
@@ -109,96 +112,24 @@
     <span><</span>
     <span>FRONT END</span>
     <span><</span>
-    <span>GRAPHICS</span>
+    <span>MULTIDISCIPLINARY</span>
 </marquee>
 
 </div>
-
-
-  <!--testing area-->
-
-  <!--
-
-  <article h3>
-
-    <div class="work-title">
-
-
-      <div id="hoverdiv">Test</div>
-      <img src="images/design-box.png" class="hover" text="After Effects Animations">
-     </div>
-
-     <script type="text/javascript" src="js/hover.js"></script>
-     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    
-    </article>
-
-
-     <div class="row">
-
-
-  <a href="about-me" onmousemove="UpdateFlyingObj (event);">
-  
-
-<div class="box col-xs-12 hidden-sm hidden-md col-md-4" data-aos="fade-up">
-    
-   <img class="main img-responsive" src="images/aboutme-box.png" alt="About me image">
-  
-   <div id="flying">The flying object also works for document scrolling.</div>
-  
-</div>
-
-</a>
-
-<a href="about-me" onmousemove="UpdateFlyingObj (event);">
-  
-
-  <div class="box col-xs-12 hidden-sm hidden-md col-md-4" data-aos="fade-up">
-  <img class="main img-responsive" src="images/aboutme-box.png" alt="About me image">
-  <div id="flying"></div>
-    
-  </div>
-  
-  </a>
-
-  <a href="about-me" onmousemove="UpdateFlyingObj (event);">
-  
-
-    <div class="box col-xs-12 hidden-sm hidden-md col-md-4" data-aos="fade-up">
-        
-       <img class="main img-responsive" src="images/aboutme-box.png" alt="About me image">
-      
-       <div id="flying"></div>
-      
-    </div>
-    
-    </a>
-
-
-
-  </div>
-
-    
-  -->
-       
-    <!--end of testing area-->
  
 <div class="container index">
-
 
  <div id="two"></div>
 
  <br>
-
   
   <div class="row">
-
 
     <div class="col-xs-12 hidden-sm hidden-md col-md-4">
       <div class="box" data-aos="fade-up">
   <a href="about">
-      <img class="main img-responsive" src="images/aboutme-box.png" alt="About image">
+    <img class="image" src="images/aboutme-box.png" alt="About image" onmouseover="document.getElementsByClassName('text')[0].style.display='block'" onmouseout="document.getElementsByClassName('text')[0].style.display='none'" onmousemove="followMouse(event)">
+    <div class="text" style="display: none; position: absolute;">ABOUT</div>
   </a>
 </div>
 </div>
@@ -212,14 +143,17 @@
       </div>
 
 </div>
+
        
-              <div class="col-xs-12 hidden-sm hidden-md col-md-4">
-            <div class="box" data-aos="fade-up">
-        <a href="wfs">
-            <img class="main img-responsive" src="images/wfs-box.png" alt="Wavey Football Shirts image">
-        </a>
-    </div>
-     </div>
+<div class="col-xs-12 hidden-sm hidden-md col-md-4">
+  <div class="box" data-aos="fade-up">
+    <a href="wfs">
+      <img class="image" src="images/wfs-box.png" alt="Wavey Football Shirts image" onmouseover="document.getElementsByClassName('text')[1].style.display='block'" onmouseout="document.getElementsByClassName('text')[1].style.display='none'" onmousemove="followMouse2(event)">
+      <div class="text" style="display: none; position: absolute;">WAVEY FOOTBALL SHIRTS</div>
+    </a>
+  </div>
+</div>
+
 
           <div class="group-tablet col-sm-12 visible-sm visible-md" data-aos="fade-up">
             
@@ -235,14 +169,15 @@
      <div class="col-xs-12 hidden-sm hidden-md col-md-4">
       <div class="box" data-aos="fade-up">
   <a href="motion">
-      <img class="main img-responsive" src="images/design-box.png" alt="Digital design work image">
+    <img class="image" src="images/design-box.gif" alt="Motion image" onmouseover="document.getElementsByClassName('text')[2].style.display='block'" onmouseout="document.getElementsByClassName('text')[2].style.display='none'" onmousemove="followMouse3(event)">
+      <div class="text" style="display: none; position: absolute;">MOTION</div>
   </a>
 </div>
 </div>
 
     <div class="digital-design-tablet col-sm-12 visible-sm visible-md"data-aos="fade-up">
       
-            <a href="motion"><img src="images/design-box.png" class="main pull-left" alt="Digital design work image"></a>         
+            <a href="motion"><img src="images/design-box.gif" class="main pull-left" alt="Motion image"></a>         
             <div class="tablet-text2 col-sm-6" data-aos="fade-up">
             <a href="motion"><h2>Motion</h2></a>
             <p>Adobe AE animations</p>
@@ -264,7 +199,8 @@
          <div class="col-xs-12 hidden-sm hidden-md col-md-4">
             <div class="box" data-aos="fade-up">
         <a href="my-green-leeds">
-            <img class="main img-responsive" src="images/mygreenleeds-box.png" alt="My green leeds image">
+          <img class="image" src="images/mygreenleeds-box.png" alt="My green leeds image" onmouseover="document.getElementsByClassName('text')[3].style.display='block'" onmouseout="document.getElementsByClassName('text')[3].style.display='none'" onmousemove="followMouse4(event)">
+          <div class="text" style="display: none; position: absolute;">MY GREEN LEEDS</div>
         </a>
     </div>
      </div>
@@ -282,14 +218,15 @@
      <div class="col-xs-12 hidden-sm hidden-md col-md-4">
       <div class="box" data-aos="fade-up">
   <a href="digital-design">
-      <img class="main img-responsive" src="images/music-box.png" alt="Music artwork image">
+    <img class="image" src="images/music-box.png" alt="Digital Design image" onmouseover="document.getElementsByClassName('text')[4].style.display='block'" onmouseout="document.getElementsByClassName('text')[4].style.display='none'" onmousemove="followMouse5(event)">
+    <div class="text" style="display: none; position: absolute;">DIGITAL DESIGN</div>
   </a>
 </div>
 </div>
 
     <div class="game-tablet col-sm-12 visible-sm visible-md" data-aos="fade-up">
       
-      <a href="digital-design"> <img src="images/music-box.png" class="main pull-right" alt="Music artwork image">
+      <a href="digital-design"> <img src="images/music-box.png" class="main pull-right" alt="Digital Design image">
       </a>         
       <div class="tablet-text col-sm-6" data-aos="fade-up">
       <a href="digital-design"><h2>Digital Design</h2></a>
@@ -303,7 +240,8 @@
          <div class="col-xs-12 hidden-sm hidden-md col-md-4">
             <div class="box" data-aos="fade-up">
         <a href="referee-hub">
-            <img class="main img-responsive" src="images/referee-hub-box.png" alt="Referee hub image">
+          <img class="image" src="images/referee-hub-box.png" alt="Referee hub image" onmouseover="document.getElementsByClassName('text')[5].style.display='block'" onmouseout="document.getElementsByClassName('text')[5].style.display='none'" onmousemove="followMouse6(event)">
+          <div class="text" style="display: none; position: absolute;">REFEREE HUB</div>
         </a>
     </div>
      </div>
@@ -329,7 +267,8 @@
      <div class="col-xs-12 hidden-sm hidden-md col-md-4">
             <div class="box" data-aos="fade-up">
         <a href="switch">
-            <img class="main img-responsive" src="images/switch-box.png" alt="Switch image">
+          <img class="image" src="images/switch-box.png" alt="Switch image" onmouseover="document.getElementsByClassName('text')[6].style.display='block'" onmouseout="document.getElementsByClassName('text')[6].style.display='none'" onmousemove="followMouse7(event)">
+          <div class="text" style="display: none; position: absolute;">SWITCH</div>
         </a>
     </div>
      </div>
@@ -347,7 +286,8 @@
       <div class="col-xs-12 hidden-sm hidden-md col-md-4">
       	    <div class="box" data-aos="fade-up">
         <a href="drop-the-planets">
-            <img class="main img-responsive" src="images/droptheplanets-box.png" alt="Drop the planets image">
+          <img class="image" src="images/droptheplanets-box.png" alt="Drop the planets image" onmouseover="document.getElementsByClassName('text')[7].style.display='block'" onmouseout="document.getElementsByClassName('text')[7].style.display='none'" onmousemove="followMouse8(event)">
+          <div class="text" style="display: none; position: absolute;">DROP THE PLANETS</div>
         </a>
     </div>
      </div>
@@ -365,7 +305,8 @@
        <div class="col-xs-12 hidden-sm hidden-md col-md-4">
             <div class="box" data-aos="fade-up">
         <a href="contact">
-            <img class="main img-responsive" src="images/triangle-box.png" alt="Contact image">
+            <img class="image" src="images/triangle-box.png" alt="Contact image" onmouseover="document.getElementsByClassName('text')[8].style.display='block'" onmouseout="document.getElementsByClassName('text')[8].style.display='none'" onmousemove="followMouse9(event)">
+            <div class="text" style="display: none; position: absolute;">CONTACT</div>
         </a>
     </div>
      </div>
@@ -404,76 +345,6 @@
 </div> <!--CONTAINER-->
 
 </div>
-
-<!--
-
-<style>
-  #flying {
-      position: absolute; 
-      cursor: none;
-      z-index: 99;
-      max-width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      opacity: 1;
-  }
-</style>
-
-<script type="text/javascript">
-  // always return 1, except at non-default zoom levels in IE before version 8
-function GetZoomFactor () {
-  var factor = 1;
-  if (document.body.getBoundingClientRect) {
-          // rect is only in physical pixel size in IE before version 8 
-      var rect = document.body.getBoundingClientRect ();
-      var physicalW = rect.right - rect.left;
-      var logicalW = document.body.offsetWidth;
-
-          // the zoom level is always an integer percent value
-      factor = Math.round ((physicalW / logicalW) * 100) / 100;
-  }
-  return factor;
-}
-
-function GetScrollPositions () {
-  if ('pageXOffset' in window) {  // all browsers, except IE before version 9
-      var scrollLeft =  window.pageXOffset;
-      var scrollTop = window.pageYOffset;
-  }
-  else {      // Internet Explorer before version 9
-      var zoomFactor = GetZoomFactor ();
-      var scrollLeft = Math.round (document.documentElement.scrollLeft / zoomFactor);
-      var scrollTop = Math.round (document.documentElement.scrollTop / zoomFactor);
-  }
-  return {x : scrollLeft, y : scrollTop};
-}
-
-function UpdateFlyingObj (event) {
-  var mouseX = event.clientX;
-  var mouseY = event.clientY;
-
-  if (navigator.appName.toLowerCase () == "microsoft internet explorer") {
-          // the clientX and clientY properties include 
-          // the left and top borders of the client area
-      mouseX -= document.documentElement.clientLeft;
-      mouseY -= document.documentElement.clientTop;
-
-      var zoomFactor = GetZoomFactor ();
-      if (zoomFactor != 1) {  // IE 7 at non-default zoom level
-          mouseX = Math.round (mouseX / zoomFactor);
-          mouseY = Math.round (mouseY / zoomFactor);
-      }
-  }
-
-  var scrollPos = GetScrollPositions ();
-
-  var flyingObj = document.getElementById ("flying");
-  flyingObj.style.left = mouseX + scrollPos.x + "px";
-  flyingObj.style.top = mouseY + scrollPos.y + "px";
-}
-</script>
-
--->
 
     <script src="js/index.js"></script>
     <script src="js/script.js"></script>
