@@ -270,6 +270,11 @@ article h3 {
    background-color: transparent;
 }
 
+.image {
+    cursor: none;
+}
+
+
 
 .text {
       position: fixed;
@@ -281,11 +286,6 @@ article h3 {
       z-index: 1000;
       cursor: none;
   }
-
-
-
-
-
 
 .hover {
    text-align: center;
