@@ -141,6 +141,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 
 .copyright-switch p {
    color: #fff;
+   -webkit-font-smoothing: antialiased;
 }
 
 .copyright-contact {
@@ -164,6 +165,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
     line-height: 30px;
     min-height: 30px;
     padding-top: 10px;
+    -webkit-font-smoothing: antialiased;
     width:100%;
 }
 
@@ -183,6 +185,7 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
     line-height: 30px;
     min-height: 30px;
     padding-top: 10px;
+    -webkit-font-smoothing: antialiased;
     width:100%;
     bottom: 0;
     font-size: 14px;
@@ -334,6 +337,7 @@ article h3 {
    margin-bottom: 0;
    color: #fff;
    cursor: pointer;
+   -webkit-font-smoothing: antialiased;
 }
 
 .navbar-nav {
@@ -433,6 +437,7 @@ article h3 {
    width: 100%;
    color: #fff;
    background: black;
+   -webkit-font-smoothing: antialiased;
 }
 
 .banner-2 {
@@ -446,6 +451,7 @@ article h3 {
    width: 100%;
    color: #fff;
    background: black;
+   -webkit-font-smoothing: antialiased;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -674,7 +680,10 @@ article h3 {
    background-size: cover;
    background-repeat: no-repeat;
    font-family: 'hk_novamedium_narrow', sans-serif;
-   font-weight: 400;
+   font-weight: 300;
+   -webkit-font-smoothing: antialiased;
+   line-height: 28px;
+   letter-spacing: 0.008em;
    font-size: 18px;
    font-style:normal;
    text-decoration-color: #fff;
@@ -689,7 +698,6 @@ article h3 {
 
    padding-top: 10%;
    overflow: auto;
-   letter-spacing: .008em;
 
 }
 
@@ -700,6 +708,10 @@ article h3 {
    font-family: 'hk_novamedium_narrow', sans-serif;
    font-weight: 400;
    font-size: 18px;
+   line-height: 28px;
+   letter-spacing: 0.008em;
+   font-style: normal;
+   -webkit-font-smoothing: antialiased;
    font-style:normal;
    text-decoration-color: #fff;
    color: #fff;
@@ -721,7 +733,7 @@ article h3 {
    color: #fff;
    border-bottom: 2px solid;
    cursor: pointer;
-   letter-spacing: .008em;
+   letter-spacing: 0.008em;
 }
 
 .aboutmetext a:hover {
@@ -735,7 +747,7 @@ article h3 {
    border-bottom: 0 #fff;
    padding-bottom: 2px;
    text-decoration: none;
-   letter-spacing: .008em;
+   letter-spacing: 0.008em;
 }
 
 .switchtext a {
@@ -743,7 +755,7 @@ article h3 {
    color: #fff;
    border-bottom: 2px solid;
    cursor: pointer;
-   letter-spacing: .008em;
+   letter-spacing: 0.008em;
 }
 
 .switchtext a:hover {
@@ -757,7 +769,7 @@ article h3 {
    border-bottom: 0 #fff;
    padding-bottom: 2px;
    text-decoration: none;
-   letter-spacing: .008em;
+   letter-spacing: 0.008em;
 }
 
 
@@ -850,12 +862,22 @@ article h3 {
    background-size: cover;
    background-repeat: no-repeat;
    font-family: 'hk_novamedium_narrow', sans-serif;
-   font-weight: 400;
+   font-weight: 300;
    font-size: 18px;
    font-style:normal;
    text-decoration-color: #fff;
    padding-top: 10%;
-   letter-spacing: .008em;
+   line-height: 28px;
+   letter-spacing: 0.008em;
+   -webkit-font-smoothing: antialiased;
+   text-align: center;
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+
 }
 
 .contact a {
@@ -863,7 +885,7 @@ article h3 {
    color: #fff;
    border-bottom: 2px solid;
    cursor: pointer;
-   letter-spacing: .008em;
+   letter-spacing: 0.008em;
 }
 
 .contact a:hover {
@@ -877,7 +899,7 @@ article h3 {
    border-bottom: 0 #fff;
    padding-bottom: 2px;
    text-decoration: none;
-   letter-spacing: .008em;
+   letter-spacing: 0.008em;
 }
 
 
@@ -904,11 +926,13 @@ article h3 {
     width: 100%;
     padding-right:45px;
     color: #fff;
+    -webkit-font-smoothing: antialiased;
 }
 
 .intro a {
     text-align:center;
     width: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -987,6 +1011,7 @@ h1, h2 {
    font-family: 'hk_novamedium_narrow', sans-serif;
    padding-top: 120px;
    padding-left: 80px;
+   -webkit-font-smoothing: antialiased;
 }
 
 .tablet-text2 {
@@ -995,6 +1020,7 @@ h1, h2 {
    font-family: 'hk_novamedium_narrow', sans-serif;
    padding-top: 120px;
    padding-left: 20px;
+   -webkit-font-smoothing: antialiased;
 }
 
 .tablet-text3 {
@@ -1003,6 +1029,7 @@ h1, h2 {
    font-family: 'hk_novamedium_narrow', sans-serif;
    padding-top: 120px;
    padding-left: 20px;
+   -webkit-font-smoothing: antialiased;
 }
 
 .main {
