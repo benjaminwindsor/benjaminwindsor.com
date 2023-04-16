@@ -52,7 +52,6 @@ body {
          url('fonts/hknovamediumnarrow/hknova-mediumnarrow-webfont.svg#hk_novamedium_narrow') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -61,16 +60,14 @@ src: url("css/fonts/HKNovaMedium.eot");
 src: 
 url("fonts/hknova-medium-webfont.woff") format("woff"),
 url("fonts/hknova-medium-webfont.otf") format("opentype"),
-
 }
 
 @font-face {
-    font-family: 'clearline';
-    src: url('fonts/clearline/bw-font-webfont.woff2') format('woff2'),
+   font-family: 'clearline';
+   src: url('fonts/clearline/bw-font-webfont.woff2') format('woff2'),
          url('fonts/clearline/bw-font-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+   font-weight: normal;
+   font-style: normal;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
@@ -83,15 +80,15 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 }
 
 .glenn:hover .member-glenn {
-  display: block
+   display: block
 }
 
 .collapse.in {
 
-  display: block;
-  position: absolute;
-  right: 10px;
-  text-align: center;
+   display: block;
+   position: absolute;
+   right: 10px;
+   text-align: center;
 }
 
 .copyright {
@@ -107,25 +104,25 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 }
 
 .copyright-others {
-   color: #000;
-   line-height: 30px;
-   min-height: 30px;
-   padding: 7px;
-   position: relative;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   clear: both;
+    color: #000;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px;
+    position: relative;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    clear: both;
 }
 
 .copyright-others p {
-   color: #fff;
-   line-height: 30px;
-   min-height: 30px;
-   padding-top: 10px;
-   width:100%;
-   bottom: 0;
-   font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding-top: 10px;
+    width:100%;
+    bottom: 0;
+    font-size: 14px;
 }
 
 .copyright-switch {
@@ -140,24 +137,26 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 }
 
 .copyright-switch p {
-   color: #fff;
-   -webkit-font-smoothing: antialiased;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 10px;
 }
 
 .copyright-contact {
-   color: #222;
-   line-height: 30px;
-   min-height: 30px;
-   padding: 7px;
-   position: fixed;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   clear: both;
+    color: #222;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    clear: both;
 }
 
 .copyright-contact p {
    color: #fff;
+   padding-top: 10px;
 }
 
 .copyright p {
@@ -192,23 +191,21 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 }
 
 .design {
-   color: #222;
-   line-height: 30px;
-   min-height: 30px;
-   padding: 7px 0;
-   text-align: right;
+    color: #222;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
 }
 .design a {
-   color: #222;
+    color: #222;
 }
 
 .marquee {
-  font-family: 'clearline', sans-serif;
-  font-size: 6rem;
-  width: 200px;
-
+   font-family: 'clearline', sans-serif;
+   font-size: 6rem;
+   width: 200px;
 }
-
 
 .marquee-index p{
    
@@ -249,13 +246,11 @@ url("fonts/hknova-medium-webfont.otf") format("opentype"),
 /**/
 
 article h3 {
-
    position: absolute;
-    z-index: 300;
-    font-weight: normal;
-    cursor: none;
-    white-space: nowrap;
-
+   z-index: 300;
+   font-weight: normal;
+   cursor: none;
+   white-space: nowrap;
 }
 
 #hoverdiv {
@@ -265,7 +260,6 @@ article h3 {
    background-color: transparent;
 }
 
-
 #movableText {
    display: none;
    position: absolute;
@@ -274,21 +268,19 @@ article h3 {
 }
 
 .image {
-    cursor: none;
+   cursor: none;
 }
 
-
-
 .text {
-      position: fixed;
-      transform: translateX(-350%);
-      font-size: 45px;
-      font-family: 'HKNovaMedium', sans-serif;
-      text-align: left;
-      justify-content: center;
-      z-index: 1000;
-      cursor: none;
-  }
+   position: fixed;
+   transform: translateX(-350%);
+   font-size: 45px;
+   font-family: 'HKNovaMedium', sans-serif;
+   text-align: left;
+   justify-content: center;
+   z-index: 1000;
+   cursor: none;
+}
 
 .hover {
    text-align: center;
@@ -298,19 +290,19 @@ article h3 {
 }
 
 .work-title {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 100;
-    padding:2px;
-    height:360px;
-    width: 100%;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 100;
+   padding:2px;
+   height:360px;
+   width: 100%;
 }
 
 .wrapper {
    display: flex;
    height: 100%;
    width: 100%;
- }
+}
 
 .navbar-home {
    margin-bottom: 0;
@@ -318,7 +310,6 @@ article h3 {
    list-style-type: none;
    position: relative;
 }
-
 
 .navbar-home a{
    margin-bottom: 0;
@@ -341,7 +332,6 @@ article h3 {
 }
 
 .navbar-nav {
-
    font-family: 'hk_novamedium_narrow', sans-serif;
    font-weight:normal;
    font-style:normal;
@@ -371,7 +361,6 @@ article h3 {
 }
 
 .navbar-brand:hover {
-  
    width: 250px;
    color: #fff;
 }
@@ -385,7 +374,6 @@ article h3 {
  }
 
 .overlay {
-  
   height: 100%;
   width: 100%;
   display: none;
@@ -427,7 +415,6 @@ article h3 {
 }
 
 .banner {
-
    background: #ffffff;
    font-family: 'hk_novamedium_narrow', sans-serif;
    font-weight: 400;
@@ -441,7 +428,6 @@ article h3 {
 }
 
 .banner-2 {
-
    background: #ffffff;
    position: fixed;
    bottom: 0;
@@ -455,7 +441,6 @@ article h3 {
 }
 
 #bs-example-navbar-collapse-1 {
-
    z-index: 2;
    background-color: transparent;
    padding-top: 30px;
@@ -473,40 +458,34 @@ article h3 {
 
 /*bs-example-navbar-collapse-2 to be used on longer pages (motion, digital design)*/
 
-
 .form-group {
-
-    padding: 2px;
+   padding: 2px;
 }
 
-
 .navbar-inverse {
-
-    background-color: #fff;
-    border-color: #fff;
+   background-color: #fff;
+   border-color: #fff;
 }
 
 .navbar-toggle {
-    background-color: #fff;
-    margin-top: 86px;
-    margin-right: 75px;
-    z-index: 2;
-    border: none;
-
+   background-color: #fff;
+   margin-top: 86px;
+   margin-right: 75px;
+   z-index: 2;
+   border: none;
 }
 
 .navbar-toggle span {
-    background-color: #000;
-    width: 2px;
-    height: 22px;
+   background-color: #000;
+   width: 2px;
+   height: 22px;
 }
 
 .navbar-toggle .icon-bar {
-    height: 4px;
+   height: 4px;
 }
 
 .navbar-collapse.in {
-
    position: absolute;
    right: 15px;
    overflow-y: visible;
@@ -518,7 +497,6 @@ article h3 {
 }
 
 /* Icon 1 */
-
 
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 24px;
@@ -584,7 +562,6 @@ article h3 {
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-
 
 /* Icon 3 */
 
@@ -665,18 +642,17 @@ article h3 {
 }
 
 .aboutmetext {
-
-   padding-top: 140px;
    overflow: auto;
-   position: relative;
    letter-spacing: .008em;
-   padding-bottom: 240px;
    justify-content: center!important;
-
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
 }
 
 .aboutmetext p {
-
    background-size: cover;
    background-repeat: no-repeat;
    font-family: 'hk_novamedium_narrow', sans-serif;
@@ -693,16 +669,12 @@ article h3 {
    justify-content: center;
 }
 
-
 .switchtext {
-
    padding-top: 10%;
    overflow: auto;
-
 }
 
 .switchtext p {
-
    background-size: cover;
    background-repeat: no-repeat;
    font-family: 'hk_novamedium_narrow', sans-serif;
@@ -718,18 +690,14 @@ article h3 {
    overflow: auto;
    padding-bottom: 30px;
    text-align: left;
-
 }
 
 .aboutmetext h2 {
-
    font-family: 'hk_novamedium_narrow', sans-serif;
    font-size: 4rem;
-
 }
 
 .aboutmetext a {
-
    color: #fff;
    border-bottom: 2px solid;
    cursor: pointer;
@@ -737,7 +705,6 @@ article h3 {
 }
 
 .aboutmetext a:hover {
-
    color: #fff;
    text-decoration: none;
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
@@ -751,7 +718,6 @@ article h3 {
 }
 
 .switchtext a {
-
    color: #fff;
    border-bottom: 2px solid;
    cursor: pointer;
@@ -759,7 +725,6 @@ article h3 {
 }
 
 .switchtext a:hover {
-
    color: #fff;
    text-decoration: none;
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
@@ -772,9 +737,6 @@ article h3 {
    letter-spacing: 0.008em;
 }
 
-
-
-}
 .bx-wrapper .bx-pager.bx-default-pager a {
     background: #fff;
     color:
@@ -789,13 +751,10 @@ article h3 {
 }
 
 .jumbotron p {
-
    font-weight: 400;
-
 }
 
 .jumbotron {
-
    height: 100vh;
    background-color: white;
    background-size: cover;
@@ -821,7 +780,6 @@ article h3 {
          }
       }
 
-
       /* Color Theme Swatches in Hex */
 .yeezy-boost_190227_001-1-hex { color: #F2F2F2; }
 .yeezy-boost_190227_001-2-hex { color: #AAB9BF; }
@@ -843,10 +801,7 @@ article h3 {
 .yeezy-boost_190227_001-4-hsla { color: hsla(10, 79, 75, 1); }
 .yeezy-boost_190227_001-5-hsla { color: hsla(10, 44, 73, 1); }
 
-
-
 .bg {
-
    background-image: ("images/wallpaper2.png") no-repeat center center;
    background-size: 100%;
    position: fixed;
@@ -858,7 +813,6 @@ article h3 {
 }
 
 .contact{
-
    background-size: cover;
    background-repeat: no-repeat;
    font-family: 'hk_novamedium_narrow', sans-serif;
@@ -877,11 +831,9 @@ article h3 {
    left: 50%;
    -ms-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
-
 }
 
 .contact a {
-
    color: #fff;
    border-bottom: 2px solid;
    cursor: pointer;
@@ -889,7 +841,6 @@ article h3 {
 }
 
 .contact a:hover {
-
    color: #fff;
    text-decoration: none;
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
@@ -902,39 +853,33 @@ article h3 {
    letter-spacing: 0.008em;
 }
 
-
-
 .contact h2 {
-
    font-family: 'clearline', sans-serif;
    font-size: 6rem;
    color: #fff;
-
 }
 .navbar-toggle .icon-bar {
-
    display: block;
    width: 24px;
    height: 4px;
    background-color: #000;
    border-radius: 0px;
-
 }
 
 .intro h1{
-    text-align:center;
+    text-align: center;
     width: 100%;
-    padding-right:45px;
+    padding-right: 45px;
     color: #fff;
     -webkit-font-smoothing: antialiased;
+    font-size: 69px;
 }
 
 .intro a {
-    text-align:center;
+    text-align: center;
     width: 100%;
     -webkit-font-smoothing: antialiased;
 }
-
 
 .intro ul {
     display:inline-block;
@@ -948,7 +893,6 @@ article h3 {
 }
 
 .intro {
-
    position: absolute;
    top: 40%;
    font-family: 'hk_novamedium_narrow', sans-serif;
@@ -956,10 +900,9 @@ article h3 {
    list-style-type: none;
    text-align:center;
    width: 100%;
-
 }
-.button {
 
+.button {
    background: #111;
    width: 450px;
    height: 32px;
@@ -967,19 +910,15 @@ article h3 {
    margin: 0 auto;
 }
 .button a {
-
    display: block;
    width: 100%;
    height: 100%;
    color: #000;
-
 }
 
 a {
-
    color: #fff;
    cursor: pointer;
-
 }
 
 a:hover, a:focus {
@@ -987,26 +926,21 @@ a:hover, a:focus {
 }
 
 h1, h2 {
-
    line-height: 1.2;
    color: #fff;
 }
 
 .box{
-
    padding:2px;
    height:360px;
 }
 
-
 .box img{
-
    padding:2px;
    height:360px;
 }
 
 .tablet-text {
-
    position: relative;
    font-family: 'hk_novamedium_narrow', sans-serif;
    padding-top: 120px;
@@ -1015,7 +949,6 @@ h1, h2 {
 }
 
 .tablet-text2 {
-
    position: relative;
    font-family: 'hk_novamedium_narrow', sans-serif;
    padding-top: 120px;
@@ -1024,7 +957,6 @@ h1, h2 {
 }
 
 .tablet-text3 {
-
    position: relative;
    font-family: 'hk_novamedium_narrow', sans-serif;
    padding-top: 120px;
@@ -1037,10 +969,8 @@ h1, h2 {
 }
 
 .main-medium {
-
    height: 360px;
    width: 100%;
-
 }
 
  .overlay {
@@ -1048,13 +978,12 @@ h1, h2 {
    right: 2px; padding:0;   z-index: 2;   transition: opacity 1.5s ease;  opacity:0;
 }
 
-.overlay:hover {  opacity:1;  
-
-   background-color: #000;}
-
+.overlay:hover {  
+   opacity:1;  
+   background-color: #000;
+}
 
 .referee-hub img{
-
    margin-top: 105px;
    height: auto;
    max-width: 100%;
@@ -1062,7 +991,6 @@ h1, h2 {
 }
 
 .referee{
-
    margin-top: 5px;
    margin-bottom: 25px;
    height: auto;
@@ -1070,9 +998,7 @@ h1, h2 {
    padding: 0;
 }
 
-
 .referee img{
-
    margin-top: 5px;
    margin-bottom: 25px;
    height: auto;
@@ -1081,7 +1007,6 @@ h1, h2 {
 }
 
 .dtp img{
-
    margin-top: 5px;
    margin-bottom: 5px;
    max-width: 100%;
@@ -1090,10 +1015,8 @@ h1, h2 {
 }
 
 .github {
-
    position: relative;
    padding: 5px;
-
 }
 
 .github:hover {
@@ -1132,19 +1055,16 @@ h1, h2 {
 }
 
 .linkedin img {
-
    height: 30px;
 }
 
 .facebook {
-   
    position: relative;
    padding: 5px;
    margin-bottom: 20px;
 }
 
 .facebook img {
-
    height: 30px;
 }
 
@@ -1202,7 +1122,6 @@ color: #fff;
 
 }
 
-
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -1215,21 +1134,17 @@ color: #fff;
 @media screen and (min-width: 176px) and (max-width: 575px) {
 
 #bs-example-navbar-collapse-1 {
-
-  z-index: 2;
-  background-color: #000;
+   z-index: 2;
+   background-color: #000;
 
 }
 
 #bs-example-navbar-collapse-2 {
-
    z-index: 2;
    background-color: #000;
- 
  }
 
 .navbar-brand {
-
    font-family: 'clearline', sans-serif;
    font-weight:normal;
    font-style:normal;
@@ -1249,11 +1164,9 @@ color: #fff;
    animation-duration: 8s; 
    animation-iteration-count: infinite;
    animation-timing-function: linear;
-
 }
 
 .navbar-brand:hover {
-
    width: 150px;
    color: #fff;
 }
@@ -1279,27 +1192,28 @@ color: #fff;
    float: none !important;
 }
 
+.intro {
+   position: absolute;
+   top: 35%;
+}
+
 .intro h1 {
-
    padding:2px;
-   font-size: 34px;
-
+   font-size: 64px;
+   text-align: left;
+   top: 35%;
 }
 
 .intro p {
-
    padding:2px;
    font-size: 14px;
-
 }
 
 .marquee-index p {
-
-  width: ;
+   width: ;
 }
 
 .button {
-
    background: #111;
    width: 300px;
    height: 27px;
@@ -1308,53 +1222,53 @@ color: #fff;
 }
 
 .button a {
-
    display: block;
    width: 100%;
    height: 100%;
    color: #000;
+}
 
+.aboutmetext {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
 }
 
 .aboutmetext p {
-
    font-family: 'hk_novamedium_narrow', sans-serif;
    font-style:normal;
    color: #fff;
    font-size: 14px;
+   font-size: 14px;
+   line-height: 20px;
 }
 
 .switchtext p {
-
    font-family: 'hk_novamedium_narrow', sans-serif;
    font-style:normal;
    color: #fff;
    font-size: 14px;
+   line-height: 20px;
+   padding-bottom: 0;
 }
 
 .aboutmetext h2 {
-
    padding-top: 10px;
    font-size: 5rem;
-
 }
 
 .contact p {
-
   font-size: 14px;
-
 }
 
 .contact a {
-
   font-size: 14px;
-
 }
 
 .contact h2 {
-
   font-size: 5rem;
-
 }
 
 .column {
@@ -1363,7 +1277,6 @@ color: #fff;
 }
 
 .column2 {
-
    max-width: 100%;
    float: right;
    flex: 100%;
@@ -1374,7 +1287,6 @@ color: #fff;
    display: none;
 }
 
-
 .wrapper {
    flex-direction: column-reverse;
 }
@@ -1384,16 +1296,13 @@ color: #fff;
 }
 
 .referee-hub img{
-
    margin-top: 20px;
    margin-bottom: 10px;
    height:360px;
    padding: 0;
-
 }
 
 .bg {
-
    background-image: ("images/wallpaper2.png") no-repeat center center;
    position: fixed;
    width: 100%;
@@ -1403,24 +1312,20 @@ color: #fff;
    z-index: -1;
 }
 
-
 .copyright {
-    color: #222;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-    clear: both;
-
+   color: #222;
+   line-height: 30px;
+   min-height: 30px;
+   padding: 7px;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   clear: both;
 }
 
 .copyright a:hover {
     color: #222;
-
 }
-
 
 .banner {
    font-size: 18px;
@@ -1429,9 +1334,6 @@ color: #fff;
 .banner-2 {
    font-size: 18px;
 }
-
-
-
 
 }
 
@@ -1517,15 +1419,8 @@ color: #fff;
 }
 
 .intro h1 {
-
    padding:2px;
-   font-size: 50px;
-
-}
-
-.intro p {
-
-   
+   font-size: 79px;
 }
 
 .referee-hub img{
@@ -1534,7 +1429,6 @@ color: #fff;
    height:360px;
    padding: 0;
 }
-
 
 .copyright {
     color: #222;
@@ -1545,8 +1439,6 @@ color: #fff;
     width:100%;
     height:60px;   /* Height of the footer */
     clear: both;
-    
-
 }
 
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
@@ -1649,21 +1541,29 @@ color: #fff;
 
 }
 
+@media (min-width: 768px) and (max-width: 1199px) { 
+
+.intro {
+   top: 45%;
+}
+
+.intro h1 {
+   font-size: 64px;
+   padding: 0px;
+}
+
+}
+
 
 @media (min-height: 330px) and (max-height: 725px) { 
 
-	.copyright {
 
-		position: relative;
-		
-	}
 
 }
 
 @media (min-height: 330px) and (max-height: 725px) { 
 
 .copyright-contact {
-   position: relative;
    margin-top: 85px;
 }
 
