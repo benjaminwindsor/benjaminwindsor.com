@@ -964,6 +964,10 @@ h1, h2 {
    -webkit-font-smoothing: antialiased;
 }
 
+.tablet-text h2, .tablet-text2 h2, .tablet-text3 h2 {
+      font-size: 28px;
+}
+
 .main {
    height: 360px;
 }
